@@ -127,6 +127,4 @@ pytest tests/
 
 Smart Agence - Formation Cohort 1 (Avril - Juillet 2025)
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+#
