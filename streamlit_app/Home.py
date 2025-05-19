@@ -6,7 +6,7 @@ from datetime import datetime
 # Configuration de la page
 st.set_page_config(
     page_title="Smart Agence - Gestion de Tickets",
-    page_icon="🎫",
+    page_icon="",
     layout="wide"
 )
 
@@ -120,7 +120,7 @@ with col1:
                     ticket_id = result.get("ticket_id", "N/A")
                     st.success(f"✅ Ticket créé avec succès ! ID : {ticket_id}")
         else:
-            st.warning("⚠️ Aucun agent disponible. Veuillez en ajouter d'abord.")
+            st.warning(" Aucun agent disponible. Veuillez en ajouter d'abord.")
         st.markdown('</div>', unsafe_allow_html=True)
 
 # Colonne des tickets récents

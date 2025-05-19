@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from datetime import datetime
 from . import models, schemas
 
-# CRUD operations for Agents
+# CRUD operations des Agents
 def get_agent(db: Session, agent_id: int):
     return db.query(models.Agent).filter(models.Agent.agent_id == agent_id).first()
 
@@ -44,7 +44,7 @@ def delete_agent(db: Session, agent_id: int):
         return True
     return False
 
-# CRUD operations for Tickets
+# CRUD operations des Tickets
 def get_ticket(db: Session, ticket_id: int):
     return db.query(models.Ticket).filter(models.Ticket.ticket_id == ticket_id).first()
 
@@ -91,7 +91,7 @@ def update_ticket(db: Session, ticket_id: int, ticket: schemas.TicketCreate):
         db.refresh(db_ticket)
     return db_ticket
 
-# CRUD operations for Ticket Events
+# CRUD operations pour Ticket Events
 def create_ticket_event(db: Session, event: schemas.TicketEventCreate):
     db_event = models.TicketEvent(
         agent_id=event.agent_id,

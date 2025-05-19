@@ -14,7 +14,7 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# ✅ Route de test
+# Route de test
 @app.get("/")
 def root():
     return {"message": "Bienvenue dans Smart Agence API"}
