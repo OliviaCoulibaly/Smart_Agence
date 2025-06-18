@@ -43,6 +43,7 @@ smart_agence/
 | | |---- Dashboard.py   # Interface tableau de bord
 | | |---- Admin.py       # Interface d'administration
 | |---- Home.py          # Page d'accueil de l'interface Streamlit
+|---- suivi_client       # Environnement virtuel
 |---- requirements.txt   # Dépendances du projet
 |---- README.md          # Ce fichier
 |---- tests/             # Tests unitaires
@@ -63,7 +64,7 @@ cd smart-agence
 
 2. Créer un environnement virtuel
 ```bash
-python -m venv venv
+python -m suivi_client venv
 ```
 
 3. Activer l'environnement virtuel
@@ -75,7 +76,7 @@ venv\Scripts\activate
 
 Sur macOS et Linux :
 ```bash
-source venv/bin/activate
+source suivi_client/bin/activate
 ```
 
 4. Installer les dépendances
@@ -123,8 +124,6 @@ pytest tests/
 - **Visualisation de données** : Plotly
 - **Tests** : Pytest
 
-## Auteur
+## Auteurs
 
-Smart Agence - Formation Cohort 1 (Avril - Juillet 2025)
-
-#
+Smart Agence - Formation GenAI Cohort 1 (Avril - Juillet 2025) 
